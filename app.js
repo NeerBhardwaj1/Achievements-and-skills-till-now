@@ -946,7 +946,7 @@ function executeTerminalCommand(cmd, printLine) {
     case 'help':
       printLine(`
 <span class="text-white font-bold">SYSTEM TELEMETRY COMMANDS:</span>
-  • <span class="text-cyan-400 font-bold">skills</span>        : List all 41 production competencies across 8 domains
+  • <span class="text-cyan-400 font-bold">skills</span>        : List all 49 production competencies across 8 domains
   • <span class="text-cyan-400 font-bold">domains</span>       : List the 8 architectural disciplines and skill counts
   • <span class="text-cyan-400 font-bold">cat &lt;id&gt;</span>       : Inspect architecture blueprint (e.g. 'cat llvm-ir-codegen', 'cat ecs')
   • <span class="text-cyan-400 font-bold">top</span>           : Live kernel daemon telemetry & memory pool status
@@ -954,7 +954,7 @@ function executeTerminalCommand(cmd, printLine) {
   • <span class="text-cyan-400 font-bold">matrix</span>        : Scroll to Section 03 (Formal Invariants Matrix)
   • <span class="text-cyan-400 font-bold">workbench</span>     : Scroll to Section 02 (Interactive Systems Workbench)
   • <span class="text-cyan-400 font-bold">whoami</span>        : Principal engineer identity & systems credentials
-  • <span class="text-cyan-400 font-bold">download</span>      : Download Master Engineering Compendium PDF (7 pp.)
+  • <span class="text-cyan-400 font-bold">download</span>      : Download Master Engineering Compendium PDF
   • <span class="text-cyan-400 font-bold">contact</span>       : Open secure transmission & advisory dialog
   • <span class="text-cyan-400 font-bold">clear</span>         : Clear console output buffer`);
       break;
@@ -968,7 +968,7 @@ function executeTerminalCommand(cmd, printLine) {
       break;
 
     case 'skills':
-      let sOut = '<span class="text-white font-bold">PRODUCTION COMPETENCIES DIRECTORY (41 TOTAL):</span><br/>';
+      let sOut = '<span class="text-white font-bold">PRODUCTION COMPETENCIES DIRECTORY (49 TOTAL):</span><br/>';
       DOMAINS_DATA.forEach(d => {
         sOut += `<br/><span class="text-amber-300 font-bold">// ${d.icon} ${d.title}:</span><br/>`;
         d.skills.forEach(s => {
@@ -1036,7 +1036,7 @@ Memory : 64 GB physical, 8.4 GB committed, 51.2 GB zeroed cache pool
     case 'stats':
       printLine(`
 <span class="text-cyan-400 font-bold">CROSS-DISCIPLINARY ARCHITECTURAL METRICS:</span>
-  • Verified Production Skills  : 41 Competencies
+  • Verified Production Skills  : 49 Competencies
   • Core Engineering Domains    : 8 Disciplines
   • Compiler Parse Throughput   : 125,000 lines/sec (LLVM C++)
   • Spatial Server Capacity     : 10,000+ entities @ 64Hz UDP
@@ -1163,7 +1163,7 @@ function initCommandPalette() {
       { title: 'Section 03: Formal Invariants Matrix', icon: '📊', action: () => { document.getElementById('matrix')?.scrollIntoView({ behavior: 'smooth' }); closePalette(); } },
       { title: 'Section 04: Terminal Telemetry Shell', icon: '💻', action: () => { document.getElementById('terminal')?.scrollIntoView({ behavior: 'smooth' }); closePalette(); } },
       { title: 'Section 05: Technical Advisory Models', icon: '🤝', action: () => { document.getElementById('advisory')?.scrollIntoView({ behavior: 'smooth' }); closePalette(); } },
-      { title: 'Download Master Compendium PDF (7 pp.)', icon: '📄', action: () => { window.location.href = 'Neer_Bhardwaj_Master_Engineering_Skills_Compendium.pdf'; closePalette(); } }
+      { title: 'Download Master Compendium PDF', icon: '📄', action: () => { window.location.href = 'Neer_Bhardwaj_Master_Engineering_Skills_Compendium.pdf'; closePalette(); } }
     ];
 
     systemShortcuts.forEach(s => {
@@ -1172,7 +1172,7 @@ function initCommandPalette() {
       }
     });
 
-    // All 41 Competencies
+    // All 49 Competencies
     if (typeof DOMAINS_DATA !== 'undefined') {
       DOMAINS_DATA.forEach(domain => {
         domain.skills.forEach(skill => {

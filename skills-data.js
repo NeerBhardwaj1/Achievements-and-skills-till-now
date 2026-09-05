@@ -5,12 +5,18 @@ const DOMAINS_DATA = [
     "badge_color": "#818cf8",
     "badge_bg": "rgba(99, 102, 241, 0.15)",
     "border_color": "#6366F1",
-    "icon": "🧠",
+    "icon": "\ud83e\udde0",
     "skills": [
       {
         "id": "cognitive-intent-routing",
         "name": "Cognitive Intent Routing & Task Decomposition",
-        "tags": ["Python", "Intent Classifiers", "Task Trees", "Adaptive Compute", "Latency Budgets"],
+        "tags": [
+          "Python",
+          "Intent Classifiers",
+          "Task Trees",
+          "Adaptive Compute",
+          "Latency Budgets"
+        ],
         "desc": "Engineered autonomous routing engines that dissect natural language queries into hierarchical task graphs. Dynamically provisions compute budgets and selects optimal reasoning modes (Fast vs. Multi-Step Deep Reasoning) based on algorithmic difficulty scores, eliminating token waste and maximizing latency efficiency for complex problem-solving workflows.",
         "invariants": "Strict DAG acyclicity; Zero token overflow budget; Fail-safe fallback to fast heuristics.",
         "metrics": "<8ms intent classification; 99.4% task decomposition accuracy; 42% token efficiency gain.",
@@ -20,7 +26,13 @@ const DOMAINS_DATA = [
       {
         "id": "autonomous-exec-controllers",
         "name": "Autonomous Executive Controllers & Session Orchestration",
-        "tags": ["State Machines", "Execution Sandboxes", "Tool Calling", "Step Verification", "Audit Trails"],
+        "tags": [
+          "State Machines",
+          "Execution Sandboxes",
+          "Tool Calling",
+          "Step Verification",
+          "Audit Trails"
+        ],
         "desc": "Architected deterministic executive controllers that govern agent lifecycles, execution sandboxes, and multi-tool orchestration. Implemented runtime step verification, hard timeout budgets, and rollback mechanisms, ensuring autonomous agents execute multi-step tool calls with zero uncontrolled side-effects and generate cryptographically verified audit trails of every reasoning step.",
         "invariants": "Deterministic state transitions; Cryptographic HMAC audit trails; Hard process sandboxing.",
         "metrics": "Sub-1ms state transitions; Zero uncontrolled side effects; 100% rollback fidelity on fault.",
@@ -30,7 +42,12 @@ const DOMAINS_DATA = [
       {
         "id": "synthetic-heuristic-evolution",
         "name": "Synthetic Heuristic Evolution & Experience Distillation",
-        "tags": ["Genetic Algorithms", "Experience Distillation", "Checkpointing", "SHA-256 Gene Hashes"],
+        "tags": [
+          "Genetic Algorithms",
+          "Experience Distillation",
+          "Checkpointing",
+          "SHA-256 Gene Hashes"
+        ],
         "desc": "Designed self-learning cognitive engines that analyze runtime execution traces, isolate successful reasoning heuristics, and distill them into persistent synthetic heuristic genes. Implemented hash-verified DNA evolution pipelines and state checkpointing, enabling autonomous systems to adapt strategies across sessions and continuously reduce repetitive problem-solving overhead.",
         "invariants": "Gene immutability via SHA-256; Monotonic heuristic fitness convergence; Zero circular derivations.",
         "metrics": "38% reduction in multi-step exploratory paths after 5 sessions; 100% reproducible lineages.",
@@ -40,7 +57,13 @@ const DOMAINS_DATA = [
       {
         "id": "multi-tiered-memory",
         "name": "Multi-Tiered Memory Systems (Episodic & Semantic)",
-        "tags": ["Vector Embeddings", "Semantic Retrieval", "SQLite", "Episodic Replay", "Context Gating"],
+        "tags": [
+          "Vector Embeddings",
+          "Semantic Retrieval",
+          "SQLite",
+          "Episodic Replay",
+          "Context Gating"
+        ],
         "desc": "Developed hybrid memory architectures unifying episodic execution logs, semantic vector retrieval, and procedural stores. Engineered memory gating and context-injection pipelines that retrieve historical interaction patterns and inject relevant contextual priors into live reasoning loops without overwhelming context windows or causing associative hallucination.",
         "invariants": "Context window quota guarantees; Cosine distance threshold > 0.82 for retrieval; Zero memory corruption.",
         "metrics": "<12ms vector retrieval across 100K nodes; 85% precision on episodic replay; Zero hallucinated keys.",
@@ -49,9 +72,15 @@ const DOMAINS_DATA = [
       },
       {
         "id": "daemon-scheduling-energy",
-        "name": "Continuous Daemon Scheduling & Energy Governance",
-        "tags": ["Async Daemons", "Background Scheduling", "Resource Governors", "OS Process Hooks"],
-        "desc": "Implemented continuous background runtimes and hardware-aware energy governors to orchestrate long-horizon autonomous tasks. Engineered resource-aware scheduling daemons that throttle computational throughput, monitor system utilization, dynamically adapt priorities during idle windows, and safely trigger maintenance cycles, state persistence, and memory compaction.",
+        "name": "Human-in-the-Loop Multi-Agent Governance & Policy Gateways",
+        "tags": [
+          "LangGraph",
+          "StateGraph",
+          "HITL Gateways",
+          "Policy Verification",
+          "SHA-256 Audit Trail"
+        ],
+        "desc": "Architected mission-critical multi-agent governance runtimes using LangGraph StateGraph pipelines. Implemented asynchronous Human-in-the-Loop (HITL) approval gateways with checkpointed pause/resume states, anti-hallucination uncertainty scoring, and SHA-256 hash-chained immutable audit ledgers, ensuring strict human authorization before consequential autonomous actions in production workflows.",
         "invariants": "CPU thermal headroom maintained < 75C; Dynamic throttling under battery power; Graceful shutdown on SIGINT.",
         "metrics": "99.98% daemon uptime; Zero background thread deadlocks; <2% idle CPU consumption.",
         "codeLang": "python",
@@ -60,7 +89,13 @@ const DOMAINS_DATA = [
       {
         "id": "bounded-safety-kernels",
         "name": "Bounded Safety Kernels & Operational Policy Enforcement",
-        "tags": ["Sandboxing", "RBAC", "Read-Only Guards", "Network Isolation", "Multi-Level Trust"],
+        "tags": [
+          "Sandboxing",
+          "RBAC",
+          "Read-Only Guards",
+          "Network Isolation",
+          "Multi-Level Trust"
+        ],
         "desc": "Engineered deterministic safety kernel layers that validate incoming commands, enforce active operational constraints (read-only access, network isolation, destructive-write guards), and restrict tool execution boundaries. Built multi-level trust verification mechanisms to ensure autonomous code execution adheres strictly to user-defined safety policies before applying system modifications.",
         "invariants": "Fail-closed permissions default; Immutability of protected system directories; Strict syscall filtering.",
         "metrics": "Zero unauthorized file overwrites; 100% interception of destructive regex patterns; <0.5ms guard latency.",
@@ -70,12 +105,65 @@ const DOMAINS_DATA = [
       {
         "id": "model-runtime-optimization",
         "name": "Model Runtime Optimization & Local Inference Pipelines",
-        "tags": ["Model Registry", "Quantized GGUF/ONNX", "Fallback Cascades", "Response Streaming"],
+        "tags": [
+          "Model Registry",
+          "Quantized GGUF/ONNX",
+          "Fallback Cascades",
+          "Response Streaming"
+        ],
         "desc": "Built modular model registry and runtime abstraction layers capable of dispatching tasks across cloud APIs and quantized local inference endpoints. Implemented automatic fallback cascades, token rate-limiting, and response streaming protocols, ensuring uninterrupted model availability and high-throughput inference under volatile network conditions.",
         "invariants": "Automatic failover cascade across 3 tiers; Zero token chunk truncation; Continuous keep-alive streams.",
         "metrics": "Sub-15ms first-token latency on local 4-bit quantized models; 100% uptime with transparent fallback cascades.",
         "codeLang": "python",
         "code": "class ModelRuntimeDispatcher:\n    def __init__(self, local_endpoint: str, cloud_cascades: list[str]):\n        self.local_worker = LocalQuantizedEngine(local_endpoint)\n        self.cascades = [CloudAPIClient(c) for c in cloud_cascades]\n\n    async def stream_inference(self, prompt: str, token_budget: int):\n        try:\n            async for chunk in self.local_worker.stream(prompt, max_tokens=token_budget):\n                yield chunk\n        except (HostHardwareExhaustion, LocalModelTimeout):\n            # Fallback cascade to primary cloud failover tier\n            async for chunk in self.cascades[0].stream(prompt, max_tokens=token_budget):\n                yield chunk"
+      },
+      {
+        "id": "langgraph-hitl-governance",
+        "name": "Human-in-the-Loop Multi-Agent Governance & Policy Gateways",
+        "tags": [
+          "LangGraph",
+          "StateGraph",
+          "HITL Gateways",
+          "Policy Verification",
+          "SHA-256 Audit Trail"
+        ],
+        "desc": "Architected mission-critical multi-agent governance runtimes using LangGraph StateGraph pipelines. Implemented asynchronous Human-in-the-Loop (HITL) approval gateways with checkpointed pause/resume states, anti-hallucination uncertainty scoring, and SHA-256 hash-chained immutable audit ledgers, ensuring strict human authorization before consequential autonomous actions in production workflows.",
+        "invariants": "Zero unauthorized tool invocations; Deterministic state checkpointing across pause/resume cycles; SHA-256 chained audit integrity.",
+        "metrics": "<15ms state checkpointing latency; 100% human gate interception on high-risk actions; Zero unverified autonomous disbursements.",
+        "codeLang": "python",
+        "code": "from langgraph.graph import StateGraph, END\nfrom app.models.enums import RiskLevel, HITLDecision\n\nclass GovernanceOrchestrator:\n    def __init__(self, checkpointer, audit_ledger):\n        self.checkpointer = checkpointer\n        self.ledger = audit_ledger\n        self.workflow = StateGraph(AgentGraphState)\n\n    def route_risk_policy(self, state: AgentGraphState) -> str:\n        risk_score = state['risk_assessment']['composite_score']\n        if risk_score > 0.65 or state['action_type'].requires_human_approval():\n            return 'hitl_approval_gate'\n        return 'autonomous_execution'\n\n    async def hitl_approval_gate(self, state: AgentGraphState):\n        checkpoint_id = await self.checkpointer.save(state)\n        await self.ledger.log_pending_approval(state['session_id'], checkpoint_id)\n        return {'awaiting_human_authorization': True, 'checkpoint_id': checkpoint_id}"
+      },
+      {
+        "id": "regulatory-compliance-intelligence",
+        "name": "Cross-Lingual Regulatory Intelligence & Obligation Extraction",
+        "tags": [
+          "Regulatory NLP",
+          "12+ Indic Languages",
+          "Obligation Extraction",
+          "Temporal Task Graphs",
+          "Clause Diffing"
+        ],
+        "desc": "Engineered end-to-end regulatory compliance intelligence systems extracting statutory obligations across 12+ Indian languages. Developed cross-lingual semantic vector search, temporal compliance task graph generators, and semantic AST version diffing to identify clause revisions, cross-jurisdictional liabilities, and filing deadlines with zero manual review friction.",
+        "invariants": "Deterministic multilingual clause alignment; Monotonic temporal compliance dependency graphs; Zero silent clause omission.",
+        "metrics": "99.1% extraction precision across 12 Indic languages; Sub-80ms semantic cross-lingual retrieval; 100% detection of version conflicts.",
+        "codeLang": "python",
+        "code": "class RegulatoryObligationExtractor:\n    def __init__(self, embedding_model, diff_engine):\n        self.embedder = embedding_model\n        self.differ = diff_engine\n\n    async def process_statute(self, doc_text: str, language: str) -> ComplianceMatrix:\n        canonical_en = await translate_to_canonical(doc_text, src_lang=language)\n        clauses = self.segment_regulatory_clauses(canonical_en)\n        obligations = []\n        for clause in clauses:\n            meta = self.extract_liability_and_penalties(clause)\n            obligations.append(ComplianceTask(clause_id=clause.id, deadline=meta.deadline, risk=meta.severity))\n        return ComplianceMatrix(tasks=obligations, dependency_graph=build_dag(obligations))"
+      },
+      {
+        "id": "multi-model-llm-gateway",
+        "name": "Multi-Model LLM Gateway & Provider Abstraction Runtimes",
+        "tags": [
+          "Express.js",
+          "Model Registry",
+          "Encrypted Key Vaults",
+          "Token Streaming",
+          "Multi-Provider Failover"
+        ],
+        "desc": "Built a unified multi-provider AI model gateway consolidating heterogeneous LLM provider endpoints behind a standardized REST interface. Implemented local encrypted API key vaults, dynamic rate-limiting governance, automatic failover cascades across providers, and Server-Sent Events (SSE) token streaming for resilient, high-availability model orchestration.",
+        "invariants": "Zero plaintext key leakage; Transparent upstream failover cascades; Bounded stream backpressure.",
+        "metrics": "<10ms internal proxy routing overhead; 99.9% uptime across provider outages; Zero token truncation.",
+        "codeLang": "javascript",
+        "code": "class MultiModelGateway {\n  constructor(keyVault, providerRegistry) {\n    this.keyVault = keyVault;\n    this.registry = providerRegistry;\n  }\n  async dispatchInference(prompt, options = {}) {\n    const primary = this.registry.getProvider(options.preferredModel || 'gemini-1.5-pro');\n    try {\n      return await primary.streamCompletion(prompt, this.keyVault.getKey(primary.id));\n    } catch (err) {\n      const fallback = this.registry.getFallback(primary.id);\n      return await fallback.streamCompletion(prompt, this.keyVault.getKey(fallback.id));\n    }\n  }\n}"
       }
     ]
   },
@@ -85,12 +173,17 @@ const DOMAINS_DATA = [
     "badge_color": "#34d399",
     "badge_bg": "rgba(16, 185, 129, 0.15)",
     "border_color": "#10B981",
-    "icon": "⚡",
+    "icon": "\u26a1",
     "skills": [
       {
         "id": "ast-parser-grammar",
         "name": "Lexical Tokenization, Grammar & AST Parser Engineering",
-        "tags": ["Custom Lexer", "Recursive Descent Parsing", "Abstract Syntax Trees", "Syntax Diagnostics"],
+        "tags": [
+          "Custom Lexer",
+          "Recursive Descent Parsing",
+          "Abstract Syntax Trees",
+          "Syntax Diagnostics"
+        ],
         "desc": "Designed custom programming language frontends featuring deterministic lexical analyzers and recursive descent AST parsers. Developed formal grammar specifications capable of processing custom syntax structures, operators, control flow statements, and nested block scopes while providing line-accurate compiler diagnostics, syntax error recovery, and structured AST representations.",
         "invariants": "Deterministic LL(1) grammar lookahead; Sound AST parent-child invariant; Zero memory leaks in syntax trees.",
         "metrics": "125,000 lines/sec parse throughput on single CPU core; 100% diagnostic span accuracy.",
@@ -100,7 +193,12 @@ const DOMAINS_DATA = [
       {
         "id": "llvm-ir-codegen",
         "name": "LLVM Intermediate Representation (IR) & Native Codegen",
-        "tags": ["LLVM C++ API", "Target Machine Passes", "Native Code Emitters", "JIT Compilation"],
+        "tags": [
+          "LLVM C++ API",
+          "Target Machine Passes",
+          "Native Code Emitters",
+          "JIT Compilation"
+        ],
         "desc": "Constructed compiler backends utilizing LLVM infrastructure to translate custom high-level Abstract Syntax Trees into optimized LLVM Intermediate Representation (IR). Implemented instruction emission, register allocation passes, target machine configurations, and native object code generation pipelines, producing high-performance standalone machine binaries from scratch.",
         "invariants": "Sound Static Single Assignment (SSA) form; Strict LLVM Module Verification passes; Standard ABI conformance.",
         "metrics": "AOT native binary compilation <180ms; Zero verification assertion failures; Full x86_64 and ARM64 target emission.",
@@ -110,7 +208,12 @@ const DOMAINS_DATA = [
       {
         "id": "static-type-systems",
         "name": "Static Type Systems & Semantic Verification",
-        "tags": ["Symbol Tables", "Type Inference", "Scope Resolution", "Semantic Analysis Passes"],
+        "tags": [
+          "Symbol Tables",
+          "Type Inference",
+          "Scope Resolution",
+          "Semantic Analysis Passes"
+        ],
         "desc": "Implemented static type-checking and semantic verification engines for custom compiled languages. Designed lexical symbol tables, variable scope resolvers, and type coercion validators that enforce strict compile-time type safety, eliminate undefined symbol access, and optimize memory layout prior to native binary emission.",
         "invariants": "Sound Hindley-Milner type inference; Strict static scope containment; Zero runtime implicit coercions.",
         "metrics": "O(1) scoped symbol resolution; 0.04ms semantic validation latency on 10,000-symbol symbol tables.",
@@ -120,7 +223,12 @@ const DOMAINS_DATA = [
       {
         "id": "custom-stdlib-primitives",
         "name": "Custom Standard Library & Native Memory Primitives",
-        "tags": ["Manual Memory Mgmt", "I/O Buffers", "Core Math Primitives", "C ABI Interoperability"],
+        "tags": [
+          "Manual Memory Mgmt",
+          "I/O Buffers",
+          "Core Math Primitives",
+          "C ABI Interoperability"
+        ],
         "desc": "Authored custom standard libraries and core runtime primitives to support native language execution. Engineered low-level memory allocation wrappers, string manipulation buffers, terminal I/O routines, and mathematical primitives. Implemented standard C ABI linking interfaces, enabling custom-compiled programs to invoke operating system system-calls and native external shared libraries.",
         "invariants": "Zero dependency on libc when compiling standalone; C ABI binary compatibility; Bound-checked memory spans.",
         "metrics": "4.2x faster cold-start runtime initialization than glibc; Zero dynamic heap fragmentation in micro-allocator.",
@@ -130,7 +238,13 @@ const DOMAINS_DATA = [
       {
         "id": "simd-vectorization",
         "name": "SIMD Vectorization & Cache-Aligned Data Structures",
-        "tags": ["Data-Oriented Design", "Cache Line Alignment", "Memory Padding", "C++20", "SoA Layout"],
+        "tags": [
+          "Data-Oriented Design",
+          "Cache Line Alignment",
+          "Memory Padding",
+          "C++20",
+          "SoA Layout"
+        ],
         "desc": "Applied low-level hardware optimization techniques to maximize CPU cache locality and instruction throughput. Structured memory buffers along 64-byte cache lines, utilized struct-of-arrays (SoA) layouts to facilitate SIMD auto-vectorization, and eliminated pointer chasing in critical execution paths, achieving significant throughput speedups in compute-intensive loops.",
         "invariants": "64-byte alignment guaranteed via alignas(64); Zero false sharing across cores; AVX2 / AVX-512 register saturation.",
         "metrics": "3.8x throughput speedup over AoS baseline; Zero L1/L2 cache misses in critical inner compute loops.",
@@ -145,12 +259,18 @@ const DOMAINS_DATA = [
     "badge_color": "#22d3ee",
     "badge_bg": "rgba(6, 182, 212, 0.15)",
     "border_color": "#06B6D4",
-    "icon": "🕹️",
+    "icon": "\ud83d\udd79\ufe0f",
     "skills": [
       {
         "id": "ecs-architecture",
         "name": "Entity Component System (ECS) Architecture",
-        "tags": ["C++20", "Data-Oriented Design", "Cache Locality", "Archetype Pooling", "Parallel Systems"],
+        "tags": [
+          "C++20",
+          "Data-Oriented Design",
+          "Cache Locality",
+          "Archetype Pooling",
+          "Parallel Systems"
+        ],
         "desc": "Architected high-performance, multithreaded Entity Component System (ECS) game server architectures in modern C++20. Applied data-oriented design principles, contiguous memory archetype storage, and component pooling to eliminate object-oriented cache misses, enabling real-time parallel system updates for thousands of simultaneous entities across high-frequency simulation ticks.",
         "invariants": "Contiguous archetype array memory; Lock-free read queries across worker threads; Zero pointer chasing.",
         "metrics": "10,000+ active spatial entities simulated @ 64 ticks/sec; <0.4ms frame simulation budget on CPU.",
@@ -160,7 +280,12 @@ const DOMAINS_DATA = [
       {
         "id": "udp-network-sync",
         "name": "Low-Latency Network Synchronization & State Replication",
-        "tags": ["UDP Sockets", "Delta Compression", "Dead-Reckoning", "Client-Side Prediction"],
+        "tags": [
+          "UDP Sockets",
+          "Delta Compression",
+          "Dead-Reckoning",
+          "Client-Side Prediction"
+        ],
         "desc": "Engineered authoritative client-server spatial networking systems built on raw UDP socket protocols. Implemented delta-compression algorithms, client-side movement prediction, and dead-reckoning interpolation to guarantee synchronized spatial positions across distributed clients, minimizing bandwidth utilization and eliminating visual stutter across variable network connections in multiplayer virtual environments.",
         "invariants": "Authoritative server validation; Monotonic sequence numbers with duplicate rejection; Bit-packed delta payloads.",
         "metrics": "<1ms socket handling loop; 78% bandwidth compression via bit-packing; Smooth extrapolation up to 150ms packet jitter.",
@@ -170,7 +295,13 @@ const DOMAINS_DATA = [
       {
         "id": "hlsl-shaders-urp",
         "name": "HLSL Shader Programming & Unity Rendering Pipelines",
-        "tags": ["Unity C#", "HLSL", "Universal Render Pipeline (URP)", "Custom Shaders", "Spatial FX"],
+        "tags": [
+          "Unity C#",
+          "HLSL",
+          "Universal Render Pipeline (URP)",
+          "Custom Shaders",
+          "Spatial FX"
+        ],
         "desc": "Developed custom HLSL vertex and fragment shaders integrated within Unity's Universal Render Pipeline (URP). Created interactive spatial visual effects, holographic depth cues, spatial boundary grids, and real-time lighting materials optimized specifically for high-frame-rate rendering across virtual and augmented reality head-mounted displays.",
         "invariants": "Zero branching in high-frequency fragment functions; Single-pass stereo instanced rendering compatibility.",
         "metrics": "Solid 90/120 FPS on Meta Quest 3 & Apple Vision Pro; <0.2ms GPU rendering cost per spatial holographic pass.",
@@ -180,7 +311,12 @@ const DOMAINS_DATA = [
       {
         "id": "cross-platform-spatial-bridge",
         "name": "Cross-Platform Spatial Engine Bridging",
-        "tags": ["Protocol Translators", "TCP/WebSockets", "Minecraft & Roblox Bridges", "Serialization"],
+        "tags": [
+          "Protocol Translators",
+          "TCP/WebSockets",
+          "Minecraft & Roblox Bridges",
+          "Serialization"
+        ],
         "desc": "Engineered bidirectional cross-platform bridge protocols linking standalone C++ spatial simulation engines with external game platforms such as Minecraft and Roblox. Implemented serialization protocols, entity mapping wrappers, and real-time WebSocket state broadcasters, allowing spatial avatars and world modifications to mirror continuously across disparate gaming engines.",
         "invariants": "Synchronized coordinate transformation matrix; Message deduplication ring buffers; Auto-reconnection socket daemon.",
         "metrics": "<10ms end-to-end spatial mirroring latency; 100% position parity across heterogeneous game coordinate spaces.",
@@ -190,7 +326,12 @@ const DOMAINS_DATA = [
       {
         "id": "deterministic-3d-physics",
         "name": "Deterministic 3D Spatial Physics & Collision Simulation",
-        "tags": ["AABB Bounding Boxes", "Raycasting", "Spatial Partitioning", "Fixed-Step Physics"],
+        "tags": [
+          "AABB Bounding Boxes",
+          "Raycasting",
+          "Spatial Partitioning",
+          "Fixed-Step Physics"
+        ],
         "desc": "Implemented deterministic 3D physics engines featuring axis-aligned bounding box (AABB) collisions, raycasting, and spatial hashing grids. Maintained fixed-timestep simulation loops to ensure identical physics resolution across heterogeneous client hardware, preventing desynchronization in competitive spatial multi-user simulations.",
         "invariants": "Fixed 64 Hz timestep accumulator; Zero floating-point cross-platform divergence in contact resolvers.",
         "metrics": "5,000 continuous raycasts / millisecond; O(1) collision queries via 3D spatial voxel hash table.",
@@ -205,12 +346,18 @@ const DOMAINS_DATA = [
     "badge_color": "#fbbf24",
     "badge_bg": "rgba(245, 158, 11, 0.15)",
     "border_color": "#F59E0B",
-    "icon": "👁️",
+    "icon": "\ud83d\udc41\ufe0f",
     "skills": [
       {
         "id": "facial-mesh-eye-gaze",
         "name": "Facial Mesh & Eye Gaze Vector Estimation",
-        "tags": ["OpenCV", "MediaPipe Face Mesh", "Iris Tracking", "3D Geometry", "Euclidean Vectors"],
+        "tags": [
+          "OpenCV",
+          "MediaPipe Face Mesh",
+          "Iris Tracking",
+          "3D Geometry",
+          "Euclidean Vectors"
+        ],
         "desc": "Implemented real-time facial landmark tracking and gaze estimation pipelines using OpenCV and MediaPipe. Extracted 468 3D facial coordinate landmarks to calculate Euclidean Eye Aspect Ratios (EAR) and iris center displacements, accurately estimating user eye gaze direction and blink frequency at 60 FPS without specialized hardware sensors.",
         "invariants": "Illumination-invariant landmark normalization; Robust tracking across +/- 45 deg head yaw.",
         "metrics": "Solid 60 FPS real-time CPU tracking; <0.5 degree gaze angle angular error; 98.7% blink detection accuracy.",
@@ -220,7 +367,12 @@ const DOMAINS_DATA = [
       {
         "id": "biometric-attention-posture",
         "name": "Biometric Attention & Posture Telemetry",
-        "tags": ["SolvePnP 3D Head Pose", "Real-Time Telemetry", "Ergonomic Analytics", "Fatigue Detection"],
+        "tags": [
+          "SolvePnP 3D Head Pose",
+          "Real-Time Telemetry",
+          "Ergonomic Analytics",
+          "Fatigue Detection"
+        ],
         "desc": "Built automated biometric tracking engines calculating 3D head pose rotation vectors (pitch, yaw, roll) using OpenCV's SolvePnP algorithm. Formulated attention scoring heuristics cross-referencing gaze stability, head orientation, and eye closure durations to detect distraction and fatigue, generating automated alerts and rich ergonomic productivity analytics.",
         "invariants": "Strict 3D projection calibration matrix; Zero sensor drift via Kalman filtering.",
         "metrics": "Sub-8ms latency per frame on standard webcam; 96.2% precision on fatigue classification.",
@@ -230,7 +382,13 @@ const DOMAINS_DATA = [
       {
         "id": "nlp-threat-classification",
         "name": "NLP Feature Extraction & Threat Classification",
-        "tags": ["Scikit-Learn", "TF-IDF Vectorization", "N-Grams", "Regex Heuristics", "Ensembles"],
+        "tags": [
+          "Scikit-Learn",
+          "TF-IDF Vectorization",
+          "N-Grams",
+          "Regex Heuristics",
+          "Ensembles"
+        ],
         "desc": "Developed natural language processing pipelines to detect deceptive phishing emails and malicious messaging. Extracted statistical lexical features, suspicious URL structural patterns, domain spoofing heuristics, and TF-IDF word/character n-grams, applying ensemble machine learning classifiers to accurately categorize sophisticated social engineering attacks and automated spam campaigns.",
         "invariants": "Zero reliance on dynamic code evaluation; Safe sanitization of malicious strings; Constant-time tokenization.",
         "metrics": "99.1% F1-score on malicious email dataset; <5ms inference classification time per email payload.",
@@ -240,7 +398,12 @@ const DOMAINS_DATA = [
       {
         "id": "statistical-anomaly-detection",
         "name": "Statistical Anomaly Detection & Model Evaluation",
-        "tags": ["Confusion Matrices", "ROC-AUC Curves", "Precision-Recall Tuning", "Scikit-Learn"],
+        "tags": [
+          "Confusion Matrices",
+          "ROC-AUC Curves",
+          "Precision-Recall Tuning",
+          "Scikit-Learn"
+        ],
         "desc": "Engineered rigorous machine learning validation workflows evaluating model performance across imbalanced security datasets. Tuned classification thresholds, optimized ROC-AUC curves, and applied cross-validation to minimize false-positive rates in production security screening, ensuring legitimate high-priority communications remain unhindered.",
         "invariants": "Deterministic stratified k-fold splits; Calibration curve Brier score < 0.05.",
         "metrics": "0.996 ROC-AUC score; False positive rate capped at <0.08% for production triage.",
@@ -255,12 +418,17 @@ const DOMAINS_DATA = [
     "badge_color": "#fb7185",
     "badge_bg": "rgba(225, 29, 72, 0.15)",
     "border_color": "#E11D48",
-    "icon": "🛡️",
+    "icon": "\ud83d\udee1\ufe0f",
     "skills": [
       {
         "id": "aes-gcm-vaults",
         "name": "AES-256-GCM Cryptography & Zero-Knowledge Vaults",
-        "tags": ["AES-256-GCM", "PBKDF2 HMAC-SHA256", "Secure Memory Scrubbing", "SQLite Security"],
+        "tags": [
+          "AES-256-GCM",
+          "PBKDF2 HMAC-SHA256",
+          "Secure Memory Scrubbing",
+          "SQLite Security"
+        ],
         "desc": "Architected zero-knowledge encrypted credential vaults utilizing authenticated AES-256-GCM encryption and PBKDF2 HMAC-SHA256 key derivation with high iteration counts and cryptographic salts. Implemented secure in-memory key handling with automatic memory scrubbing, tamper-resistant SQLite database encryption, and automated clipboard sanitation to prevent memory dump exploitation.",
         "invariants": "Zero plaintext persisted to disk; Memory scrubbing with explicit byte zeroing; Constant-time MAC comparison.",
         "metrics": "600,000 PBKDF2 iterations in <450ms; Zero-knowledge proof verification; Hardware-accelerated AES-NI.",
@@ -270,7 +438,12 @@ const DOMAINS_DATA = [
       {
         "id": "shannon-entropy-audit",
         "name": "Password Strength & Cryptographic Entropy Calculation",
-        "tags": ["Shannon Entropy", "Zxcvbn", "Spatial Pattern Analysis", "Brute-Force Estimation"],
+        "tags": [
+          "Shannon Entropy",
+          "Zxcvbn",
+          "Spatial Pattern Analysis",
+          "Brute-Force Estimation"
+        ],
         "desc": "Engineered real-time password security analyzers calculating information-theoretic Shannon entropy and heuristic pattern vulnerability. Evaluated dictionary permutations, spatial keyboard walks, sequential repetitions, and estimated offline brute-force cracking durations, delivering dynamic visual feedback and tailored suggestions to enforce resilient, entropy-dense passphrases resistant to modern GPU cracking.",
         "invariants": "Mathematical Shannon entropy H(X) = -sum(p * log2(p)); Resilient against rainbow-table cracking.",
         "metrics": "Sub-1ms entropy audit; Dynamic GPU crack-time estimates calculated up to 10^24 combinations/sec.",
@@ -280,7 +453,13 @@ const DOMAINS_DATA = [
       {
         "id": "port-auditing-cve",
         "name": "Automated Port Auditing & CVE Vulnerability Mapping",
-        "tags": ["Socket Programming", "Multithreading", "Banner Grabbing", "CVE Databases", "Auditing"],
+        "tags": [
+          "Socket Programming",
+          "Multithreading",
+          "Banner Grabbing",
+          "CVE Databases",
+          "Auditing"
+        ],
         "desc": "Developed multi-threaded network reconnaissance tools in Python for automated infrastructure auditing. Performed concurrent TCP/UDP port scans, service identification, and raw banner grabbing, automating the cross-referencing of discovered daemon versions against published CVE vulnerability databases to deliver prioritized risk scores and actionable technical remediation summaries.",
         "invariants": "Non-blocking async socket pools; Respectful packet throttling; Zero aggressive SYN floods.",
         "metrics": "1,000 ports scanned in <1.2 seconds across 64 threads; Instant CPE/CVE correlation.",
@@ -290,7 +469,13 @@ const DOMAINS_DATA = [
       {
         "id": "hardened-auth-gateway",
         "name": "Hardened Authentication & API Gateway Security",
-        "tags": ["JWT / OAuth2", "Bcrypt Salted Hashing", "Rate Limiting", "RBAC", "CSRF/XSS Defense"],
+        "tags": [
+          "JWT / OAuth2",
+          "Bcrypt Salted Hashing",
+          "Rate Limiting",
+          "RBAC",
+          "CSRF/XSS Defense"
+        ],
         "desc": "Engineered enterprise-grade authentication gateways featuring Bcrypt password hashing, short-lived JWT access tokens with rotating refresh tokens, and Redis-backed IP rate-limiting. Enforced strict HTTP-only secure cookie policies, CSRF token validation, and granular role-based access control (RBAC), effectively eliminating brute-force attacks and session hijacking vulnerabilities.",
         "invariants": "Sub-15-minute access token TTL; Cryptographically secure refresh token rotation; Zero XSS cookie leaks.",
         "metrics": "Sub-5ms token verification; Defends against 100,000+ brute-force attempts via sliding Redis windows.",
@@ -300,7 +485,12 @@ const DOMAINS_DATA = [
       {
         "id": "stream-obfuscation-ciphers",
         "name": "Custom Cryptographic Stream Obfuscation & Bitwise Ciphers",
-        "tags": ["Bitwise Permutation", "Dynamic S-Boxes", "Stream Ciphers", "Binary Masking"],
+        "tags": [
+          "Bitwise Permutation",
+          "Dynamic S-Boxes",
+          "Stream Ciphers",
+          "Binary Masking"
+        ],
         "desc": "Designed experimental cryptographic obfuscation algorithms and lightweight stream cipher prototypes. Implemented multi-round bitwise rotations, dynamic S-box substitution matrices, and key-dependent byte shuffling to obscure sensitive binary payloads, evaluating cipher resistance against statistical frequency analysis, pattern detection, and automated decompilation during static reverse-engineering analysis.",
         "invariants": "Reversible bijective substitution S-box; Zero static byte sequences in compiled payloads.",
         "metrics": "1.2 GB/s encryption throughput on AVX2; Uniform byte distribution passing chi-square randomness audits.",
@@ -310,12 +500,33 @@ const DOMAINS_DATA = [
       {
         "id": "defensive-memory-safety",
         "name": "Defensive Memory Safety & Anti-Tamper Invariants",
-        "tags": ["Buffer Boundary Checks", "Secure Zeroing", "Cryptographic Hashes", "Integrity Checks"],
+        "tags": [
+          "Buffer Boundary Checks",
+          "Secure Zeroing",
+          "Cryptographic Hashes",
+          "Integrity Checks"
+        ],
         "desc": "Implemented defensive systems programming techniques that prevent buffer overflows, use-after-free conditions, and memory corruption. Built tamper-evident integrity checkers that continuously verify executable binary hashes, preventing code injection, DLL hijacking, and unauthorized runtime memory patching.",
         "invariants": "Strict bounds validation on all memory copies; Deterministic integrity self-hash validation at startup.",
         "metrics": "Zero buffer overflow vulnerabilities across all sanitizers (ASan, MSan, TSan); <1ms integrity self-hash check.",
         "codeLang": "cpp",
         "code": "class AntiTamperWatchdog {\n    static constexpr uint64_t EXPECTED_TEXT_SECTION_HASH = 0x8F34A921B5C7D0E1ULL;\n\npublic:\n    static bool verify_process_integrity() {\n        uint8_t* text_start = reinterpret_cast<uint8_t*>(&main);\n        size_t text_size = get_section_size(\".text\");\n        uint64_t calculated = compute_fnv1a_hash(text_start, text_size);\n        \n        if (calculated != EXPECTED_TEXT_SECTION_HASH) {\n            trigger_emergency_self_termination(); // Code segment was patched or hooked\n            return false;\n        }\n        return true;\n    }\n};"
+      },
+      {
+        "id": "digital-product-passports-hashchains",
+        "name": "Cryptographic Product Passports & Tamper-Evident Provenance Chains",
+        "tags": [
+          "SHA-256 Hash Chains",
+          "Digital Passports",
+          "Fair-Trade Ledgers",
+          "QR/Shortcode Provenance",
+          "Geospatial Anomaly"
+        ],
+        "desc": "Architected decentralized provenance platforms issuing cryptographically tamper-evident digital product passports. Engineered SHA-256 cryptographic hash chains linking physical item origin, raw material purity, and ethical compensation records, combined with dual QR/alphanumeric resolution and scan-velocity geospatial anomaly detection to neutralize counterfeit duplication attacks.",
+        "invariants": "Deterministic canonical JSON serialization; Cryptographic genesis-to-leaf hash link verification; Immutable fair-wage ledger rows.",
+        "metrics": "Zero hash collisions; <5ms tamper verification check; Real-time detection of geospatial scan velocity violations.",
+        "codeLang": "python",
+        "code": "import hashlib, json\n\ndef compute_passport_hash(payload: dict, previous_hash: str) -> str:\n    canonical_bytes = json.dumps(payload, sort_keys=True, separators=(',', ':')).encode('utf-8')\n    hasher = hashlib.sha256()\n    hasher.update(canonical_bytes)\n    hasher.update(previous_hash.encode('utf-8'))\n    return hasher.hexdigest()\n\ndef verify_hash_chain(chain: list[PassportBlock]) -> bool:\n    prev = '0' * 64\n    for block in chain:\n        expected = compute_passport_hash(block.payload, prev)\n        if block.current_hash != expected:\n            raise TamperEvidenceDetected(f'Hash mismatch at block {block.id}')\n        prev = block.current_hash\n    return True"
       }
     ]
   },
@@ -325,12 +536,17 @@ const DOMAINS_DATA = [
     "badge_color": "#c084fc",
     "badge_bg": "rgba(139, 92, 246, 0.15)",
     "border_color": "#8B5CF6",
-    "icon": "🌐",
+    "icon": "\ud83c\udf10",
     "skills": [
       {
         "id": "osint-footprinting",
         "name": "Open-Source Intelligence (OSINT) & Digital Footprinting",
-        "tags": ["Automated Scraping", "DNS Enumeration", "Metadata Mining", "Dossier Aggregation"],
+        "tags": [
+          "Automated Scraping",
+          "DNS Enumeration",
+          "Metadata Mining",
+          "Dossier Aggregation"
+        ],
         "desc": "Developed modular OSINT intelligence tools automating entity footprinting across public digital channels. Scripted concurrent scrapers and API aggregators for multi-platform username validation, email deliverability probing, DNS domain tracking, and file metadata extraction, synthesizing disparate unstructured OSINT data points into unified investigation dossiers for security researchers.",
         "invariants": "Clean passive reconnaissance footprint; Automatic rate-limiting compliance; Zero IP ban triggers.",
         "metrics": "Over 80 digital platforms queried in <4 seconds; Clean structured JSON dossier aggregation.",
@@ -339,9 +555,15 @@ const DOMAINS_DATA = [
       },
       {
         "id": "recursive-knowledge-graphs",
-        "name": "Recursive Semantic Crawling & Knowledge Graphs",
-        "tags": ["Graph Theory", "Recursive Crawlers", "NetworkX", "D3.js", "Vector Nodes", "Topologies"],
-        "desc": "Engineered automated research engines that recursively crawl semantic web links to construct multi-dimensional knowledge graphs. Extracted named entities, clustered contextual relationships, and mapped topical hierarchies using graph theory data structures, enabling researchers to visualize complex conceptual domains, uncover hidden nodal links, and explore interconnected data visually.",
+        "name": "Recursive OSINT Entity Graph Discovery & Temporal Event Reconstruction",
+        "tags": [
+          "Entity Tracing",
+          "Sentence-Transformers",
+          "Neo4j Graphs",
+          "Wayback CDX",
+          "Confidence Scoring"
+        ],
+        "desc": "Architected OSINT intelligence platforms that recursively trace digital identities across multi-level depth hops (1\u20135). Built confidence scoring engines evaluating relational link strengths, integrated Wayback Machine CDX temporal timelines, and utilized local Sentence-Transformers embeddings to chronologically reconstruct real-world geopolitical events and misinformation narratives from heterogeneous feeds.",
         "invariants": "Cycle detection prevents infinite crawler loops; Bounded recursion depth limit; Deduplicated node IDs.",
         "metrics": "Constructs 5,000-node graph in <30 seconds; 60 FPS WebGL force-directed layout rendering.",
         "codeLang": "python",
@@ -350,12 +572,33 @@ const DOMAINS_DATA = [
       {
         "id": "sna-graph-centrality",
         "name": "Social Network Analysis (SNA) & Graph Centrality Metrics",
-        "tags": ["Eigenvector Centrality", "Betweenness", "Degree Centrality", "Louvain Community Detection"],
+        "tags": [
+          "Eigenvector Centrality",
+          "Betweenness",
+          "Degree Centrality",
+          "Louvain Community Detection"
+        ],
         "desc": "Built network graph analytics platforms that reconstruct social communication structures and digital communities. Calculated eigenvector, degree, and betweenness centrality metrics to identify influential network nodes and information gatekeepers, applying Louvain community detection algorithms to segment topological clusters and analyze information propagation pathways across large datasets.",
         "invariants": "Conservation of network flow; Deterministic modularity maximization; Zero orphaned nodes.",
         "metrics": "Analyzes 20,000-edge social graph in <2.4 seconds; Identifies top 1% critical broker nodes with 99.8% stability.",
         "codeLang": "python",
         "code": "import networkx as nx\n\ndef analyze_community_influence(graph: nx.Graph) -> dict[str, dict]:\n    eigen = nx.eigenvector_centrality_numpy(graph)\n    betweenness = nx.betweenness_centrality(graph, k=min(len(graph), 500))\n    \n    analytics = {}\n    for node in graph.nodes():\n        analytics[node] = {\n            'eigenvector_influence': round(eigen[node], 4),\n            'broker_centrality': round(betweenness[node], 4),\n            'degree': graph.degree[node]\n        }\n    return analytics"
+      },
+      {
+        "id": "recursive-osint-graph-discovery",
+        "name": "Recursive OSINT Entity Graph Discovery & Temporal Event Reconstruction",
+        "tags": [
+          "Entity Tracing",
+          "Sentence-Transformers",
+          "Neo4j Graphs",
+          "Wayback CDX",
+          "Confidence Scoring"
+        ],
+        "desc": "Architected OSINT intelligence platforms that recursively trace digital identities across multi-level depth hops (1\u20135). Built confidence scoring engines evaluating relational link strengths, integrated Wayback Machine CDX temporal timelines, and utilized local Sentence-Transformers embeddings to chronologically reconstruct real-world geopolitical events and misinformation narratives from heterogeneous feeds.",
+        "invariants": "Deterministic entity normalization; Acyclic depth-bounded recursive exploration; Verified provenance for timeline events.",
+        "metrics": "5-tier recursive entity discovery; Sub-second graph relationship rendering; 94% precision in automated timeline reconstruction.",
+        "codeLang": "typescript",
+        "code": "export class RecursiveEntityInvestigator {\n  private visited = new Set<string>();\n  async investigateRecursive(target: EntityNode, depth: number, maxDepth: number = 4): Promise<KnowledgeGraph> {\n    if (depth > maxDepth || this.visited.has(target.id)) return new KnowledgeGraph();\n    this.visited.add(target.id);\n    const discovered = await this.moduleRegistry.executeAllScrapers(target);\n    const scoredLinks = discovered.map(e => ({ entity: e, score: this.scorer.calculate(target, e) })).filter(l => l.score >= 0.70);\n    const graph = new KnowledgeGraph();\n    for (const link of scoredLinks) {\n      graph.addRelationalEdge(target, link.entity, link.score);\n      graph.merge(await this.investigateRecursive(link.entity, depth + 1, maxDepth));\n    }\n    return graph;\n  }\n}"
       }
     ]
   },
@@ -365,12 +608,18 @@ const DOMAINS_DATA = [
     "badge_color": "#60a5fa",
     "badge_bg": "rgba(59, 130, 246, 0.15)",
     "border_color": "#3B82F6",
-    "icon": "💻",
+    "icon": "\ud83d\udcbb",
     "skills": [
       {
         "id": "nextjs-typescript-arch",
         "name": "Modern React, Next.js & Strict TypeScript Architecture",
-        "tags": ["React 18+", "Next.js SSR/SSG", "TypeScript", "Tailwind CSS", "Atomic Design Patterns"],
+        "tags": [
+          "React 18+",
+          "Next.js SSR/SSG",
+          "TypeScript",
+          "Tailwind CSS",
+          "Atomic Design Patterns"
+        ],
         "desc": "Architected responsive, production-ready web applications using Next.js, React, and TypeScript. Implemented server-side rendering (SSR), static site generation (SSG), and atomic UI component design with Tailwind CSS, ensuring strict end-to-end type safety, modular state management, and optimized asset delivery for high-performance responsive user experiences.",
         "invariants": "100% strict TypeScript typing (no `any`); Server-Side Rendered hydration safety; Zero hydration mismatches.",
         "metrics": "100/100 Lighthouse performance score; <45ms Time to First Byte (TTFB); Sub-second First Contentful Paint.",
@@ -380,7 +629,14 @@ const DOMAINS_DATA = [
       {
         "id": "fastapi-async-services",
         "name": "High-Throughput Asynchronous Python APIs",
-        "tags": ["FastAPI", "Pydantic", "Uvicorn", "Asyncio Event Loops", "Connection Pooling", "OpenAPI"],
+        "tags": [
+          "FastAPI",
+          "Pydantic",
+          "Uvicorn",
+          "Asyncio Event Loops",
+          "Connection Pooling",
+          "OpenAPI"
+        ],
         "desc": "Engineered high-concurrency backend services and RESTful API gateways using FastAPI and Pydantic. Leveraged asynchronous I/O loops (`asyncio`), database connection pooling, and strict schema validation models to deliver sub-millisecond response latencies under heavy traffic while automatically generating interactive OpenAPI (Swagger) documentation.",
         "invariants": "Non-blocking async/await execution path; Strict Pydantic v2 input validation; Zero thread pool starvation.",
         "metrics": "4,500+ requests/second per worker; Sub-3ms P95 latency; 100% automated OpenAPI schema generation.",
@@ -389,18 +645,29 @@ const DOMAINS_DATA = [
       },
       {
         "id": "enterprise-crm-telemetry",
-        "name": "Enterprise CRM & Pipeline Telemetry Architecture",
-        "tags": ["PostgreSQL", "SQLAlchemy", "Analytics Pipelines", "Role-Based Dashboards", "Relational Schemas"],
-        "desc": "Developed full-stack CRM and enterprise telemetry systems featuring dynamic sales pipelines, lead lifecycle tracking, and interactive analytics. Designed normalized relational database schemas in PostgreSQL with SQLAlchemy ORM, implementing automated event triggers, activity audit histories, and role-based data filtering across enterprise organizational hierarchies.",
-        "invariants": "3NF normalized schema design; ACID transaction guarantees; Row-Level Security (RLS) policies.",
-        "metrics": "Zero dirty reads or unindexed full-table scans; Sub-10ms query execution across 2M historical records.",
+        "name": "Multi-Tenant Relational Schema Architecture & Role-Based Isolation",
+        "tags": [
+          "PostgreSQL 16",
+          "Prisma ORM",
+          "Tenant Isolation",
+          "RBAC Enforcement",
+          "Sales Pipeline State Machine"
+        ],
+        "desc": "Designed production multi-tenant database architectures featuring strict organizational tenant boundary isolation, role-based access control (Admin, Manager, Agent), and indexed PostgreSQL schemas via Prisma ORM. Engineered deterministic state machines, automated stage transition webhooks, and tamper-resistant audit activity logging across enterprise tenant environments.",
+        "invariants": "Strict tenant boundary isolation in every SQL query; Monotonic deal lifecycle transitions; Immutable audit event rows.",
+        "metrics": "<4ms indexed multi-tenant query resolution; 100% RBAC privilege enforcement; Zero cross-tenant data leakage.",
         "codeLang": "python",
         "code": "from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Index\nfrom sqlalchemy.orm import declarative_base, relationship\nimport datetime\n\nBase = declarative_base()\n\nclass DealPipeline(Base):\n    __tablename__ = 'deals'\n    id = Column(Integer, primary_key=True)\n    account_id = Column(Integer, ForeignKey('accounts.id'), nullable=False, index=True)\n    deal_value = Column(Integer, nullable=False)\n    stage = Column(String(32), default='QUALIFIED', index=True)\n    created_at = Column(DateTime, default=datetime.datetime.utcnow)\n\n    __table_args__ = (\n        Index('idx_deal_stage_value', 'stage', 'deal_value'),\n    )"
       },
       {
         "id": "webgl-canvas-shaders",
         "name": "Creative Web Development & Canvas Shader Animations",
-        "tags": ["Three.js", "WebGL Canvas", "GSAP ScrollTrigger", "99+ Lighthouse Optimization"],
+        "tags": [
+          "Three.js",
+          "WebGL Canvas",
+          "GSAP ScrollTrigger",
+          "99+ Lighthouse Optimization"
+        ],
         "desc": "Built award-caliber creative web interfaces integrating custom WebGL canvas shaders, Three.js 3D scenes, and GSAP ScrollTrigger animations. Engineered buttery-smooth micro-interactions, responsive fluid typography, and asset preloading strategies, consistently achieving 99+ Google Lighthouse performance, accessibility, and SEO audit scores.",
         "invariants": "60/120 FPS requestAnimationFrame loop; Offscreen canvas rendering; Automatic pause when tab inactive.",
         "metrics": "Solid 60 FPS on mobile and desktop; <1.5MB total JavaScript bundle size; 99+ Lighthouse metrics.",
@@ -410,12 +677,33 @@ const DOMAINS_DATA = [
       {
         "id": "adaptive-video-streaming",
         "name": "Adaptive Video Streaming & Media Optimization",
-        "tags": ["HLS / DASH Protocols", "CDN Edge Caching", "Video Transcoding", "Lazy Loading"],
+        "tags": [
+          "HLS / DASH Protocols",
+          "CDN Edge Caching",
+          "Video Transcoding",
+          "Lazy Loading"
+        ],
         "desc": "Built modern streaming frontends integrating adaptive bitrate video players, episode indexing, and dynamic metadata scrapers. Implemented CDN edge caching, video thumbnail generation, and client-side view state persistence, ensuring instant playback startup and seamless buffering across bandwidth-constrained mobile networks.",
         "invariants": "Automatic bitrate switching without frame stutter; Fast startup latency under 300ms.",
         "metrics": "Zero buffer stalls on 3G mobile networks; 60% bandwidth reduction using AV1/H.265 compression.",
         "codeLang": "typescript",
         "code": "import Hls from 'hls.js';\n\nexport function initializeAdaptiveStream(videoEl: HTMLVideoElement, streamManifestUrl: string): void {\n    if (Hls.isSupported()) {\n        const hls = new Hls({\n            maxBufferLength: 30,\n            maxMaxBufferLength: 60,\n            enableWorker: true\n        });\n        hls.loadSource(streamManifestUrl);\n        hls.attachMedia(videoEl);\n    } else if (videoEl.canPlayType('application/vnd.apple.mpegurl')) {\n        videoEl.src = streamManifestUrl;\n    }\n}"
+      },
+      {
+        "id": "voice-camera-pwa-architecture",
+        "name": "Voice-First & Camera-Driven Progressive Web Application Architecture",
+        "tags": [
+          "Progressive Web App",
+          "Web Speech API",
+          "MediaStreams API",
+          "Offline Service Worker",
+          "Tailwind CSS"
+        ],
+        "desc": "Engineered camera-first, voice-guided Progressive Web Applications designed for accessible edge computing. Integrated browser-native Web Speech API synthesis/recognition for speech-driven navigation, real-time MediaStreams photographic provenance capture, and offline-first Service Worker caching, delivering resilient sub-second interaction under erratic network conditions.",
+        "invariants": "Full offline functional caching; Zero external audio cloud dependencies; Non-blocking camera stream acquisition.",
+        "metrics": "Sub-200ms voice dictation transcription; 100% offline passport creation capability; Lighthouse PWA score 100/100.",
+        "codeLang": "typescript",
+        "code": "export function useVoiceDictation(onResult: (text: string) => void) {\n  const [isListening, setIsListening] = useState(false);\n  const startListening = useCallback(() => {\n    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;\n    if (!SpeechRecognition) return;\n    const rec = new SpeechRecognition();\n    rec.lang = 'hi-IN';\n    rec.onresult = (e) => onResult(Array.from(e.results).map(r => r[0].transcript).join(''));\n    rec.start();\n    setIsListening(true);\n  }, [onResult]);\n  return { isListening, startListening };\n}"
       }
     ]
   },
@@ -425,32 +713,49 @@ const DOMAINS_DATA = [
     "badge_color": "#e879f9",
     "badge_bg": "rgba(217, 70, 239, 0.15)",
     "border_color": "#D946EF",
-    "icon": "⚙️",
+    "icon": "\u2699\ufe0f",
     "skills": [
       {
         "id": "chrome-extension-mv3",
-        "name": "Chrome Extension (Manifest v3) DOM Extraction",
-        "tags": ["JavaScript", "Manifest v3", "MutationObserver", "Content Scripts", "Background Workers"],
-        "desc": "Developed high-performance Google Chrome extensions adhering to modern Manifest v3 standards. Leveraged DOM MutationObservers and asynchronous content scripts to extract dynamic real-time feed elements, social interaction metrics, and trending metadata, streaming structured JSON outputs locally without degrading browser tab rendering performance.",
-        "invariants": "Zero memory leaks in DOM observation loops; Strictly compliant with Manifest v3 background service worker lifecycles.",
-        "metrics": "Sub-1ms DOM extraction latency; Disconnects and recycles observers to ensure zero memory accumulation.",
+        "name": "Manifest V3 Service Workers & Virtual-DOM Stream Harvesters",
+        "tags": [
+          "Chrome Extension MV3",
+          "Service Workers",
+          "Virtual DOM",
+          "Client-Side CSV/JSON",
+          "Asynchronous Storage"
+        ],
+        "desc": "Developed production Chrome extensions on Manifest V3 featuring background service worker coordination and high-frequency content script injection. Engineered memory-bounded virtual DOM mutation observers that harvest infinite scrolling feeds, sanitize media URLs and telemetry, and stream client-side multi-format exports (CSV, JSON, Link manifests) without memory leaks.",
+        "invariants": "Bounded in-memory DOM node set deduplication; Zero UI thread stutter on continuous infinite scroll; Manifest V3 compliance.",
+        "metrics": "10,000+ tweets parsed and deduplicated client-side; Zero memory leaks across 45-minute continuous harvesting sessions.",
         "codeLang": "typescript",
         "code": "// Manifest v3 content-script DOM monitor\nconst observer = new MutationObserver((mutations) => {\n    for (const mutation of mutations) {\n        if (mutation.addedNodes.length > 0) {\n            mutation.addedNodes.forEach((node) => {\n                if (node instanceof HTMLElement && node.matches('.feed-post-element')) {\n                    const postData = extractTelemetry(node);\n                    chrome.runtime.sendMessage({ type: 'NEW_RECORD', payload: postData });\n                }\n            });\n        }\n    }\n});\n\nobserver.observe(document.body, { childList: true, subtree: true });"
       },
       {
         "id": "human-emulation-antibot",
-        "name": "Heuristic Human Emulation & Anti-Bot Automation",
-        "tags": ["PyAutoGUI", "Selenium", "Bezier Curve Trajectories", "Micro-Pause Delay Jitter"],
-        "desc": "Engineered sophisticated browser automation bots capable of simulating human interaction mechanics. Implemented cubic bezier mouse movement trajectories, non-linear velocity curves, randomized keystroke timings, and dynamic micro-pause jitter, reliably bypassing heuristic bot-detection engines and rate-limiting barriers during complex multi-page workflows.",
-        "invariants": "Non-linear mouse acceleration; Gaussian-distributed keystroke intervals; Zero straight-line trajectories.",
-        "metrics": "100% bypass rate on leading Cloudflare & Akamai behavioral heuristic captchas.",
+        "name": "Humanized Behavioral Emulation & Anti-Bot Steganographic Navigation",
+        "tags": [
+          "Selenium WebDriver",
+          "B\u00e9zier Trajectories",
+          "Micro-Jitter",
+          "Session Persistence",
+          "Contextual Ingestion"
+        ],
+        "desc": "Created human-indistinguishable browser automation engines employing non-linear B\u00e9zier cursor curves, variable scroll velocity physics, and randomized micro-jitter intervals. Implemented automated session cookie persistence, multi-condition DOM wait strategies, and anti-fingerprinting heuristics to safely bypass bot detection barriers on complex web platforms.",
+        "invariants": "Non-uniform time distributions; Continuous viewport sanity checks; Safe graceful exit on checkpoint triggers.",
+        "metrics": "Zero automated account shadowbans; Dynamic micro-jitter intervals (180ms - 450ms); 99.4% session retention.",
         "codeLang": "python",
-        "code": "import random, time\nimport numpy as np\n\ndef generate_cubic_bezier_path(p0: tuple, p1: tuple, p2: tuple, p3: tuple, steps: int = 50) -> list[tuple]:\n    points = []\n    for t in np.linspace(0, 1, steps):\n        # Cubic Bézier formula\n        x = (1-t)**3 * p0[0] + 3*(1-t)**2*t * p1[0] + 3*(1-t)*t**2 * p2[0] + t**3 * p3[0]\n        y = (1-t)**3 * p0[1] + 3*(1-t)**2*t * p1[1] + 3*(1-t)*t**2 * p2[1] + t**3 * p3[1]\n        points.append((int(x), int(y)))\n    return points\n\ndef natural_typing(element, text: str):\n    for char in text:\n        element.send_keys(char)\n        time.sleep(random.gauss(0.08, 0.025)) # Human Gaussian jitter"
+        "code": "import random, time\nimport numpy as np\n\ndef generate_cubic_bezier_path(p0: tuple, p1: tuple, p2: tuple, p3: tuple, steps: int = 50) -> list[tuple]:\n    points = []\n    for t in np.linspace(0, 1, steps):\n        # Cubic B\u00e9zier formula\n        x = (1-t)**3 * p0[0] + 3*(1-t)**2*t * p1[0] + 3*(1-t)*t**2 * p2[0] + t**3 * p3[0]\n        y = (1-t)**3 * p0[1] + 3*(1-t)**2*t * p1[1] + 3*(1-t)*t**2 * p2[1] + t**3 * p3[1]\n        points.append((int(x), int(y)))\n    return points\n\ndef natural_typing(element, text: str):\n    for char in text:\n        element.send_keys(char)\n        time.sleep(random.gauss(0.08, 0.025)) # Human Gaussian jitter"
       },
       {
         "id": "proxy-tls-fingerprinting",
         "name": "Multi-Egress Rotating Proxy & TLS Fingerprinting",
-        "tags": ["SOCKS5/HTTP Proxies", "JA3/JA4 Spoofing", "Asynchronous Socket Pools", "IP Rotation"],
+        "tags": [
+          "SOCKS5/HTTP Proxies",
+          "JA3/JA4 Spoofing",
+          "Asynchronous Socket Pools",
+          "IP Rotation"
+        ],
         "desc": "Built resilient network routing infrastructure managing dynamic pools of residential and datacenter proxies. Implemented automated IP rotation upon HTTP 429 throttling, health checking, and TLS client fingerprint spoofing (JA3/JA4 emulation), ensuring reliable, uninterrupted data acquisition across distributed web scraping and security assessment tasks.",
         "invariants": "Strict TLS cipher suite ordering emulation; Automatic circuit breaking on dead proxy nodes.",
         "metrics": "99.9% request success rate over 250,000 requests; Transparent sub-50ms proxy failover.",
@@ -459,18 +764,29 @@ const DOMAINS_DATA = [
       },
       {
         "id": "filesystem-hygiene-daemon",
-        "name": "Automated Filesystem Hygiene & Daemon Scripting",
-        "tags": ["Python OS/Shutil", "MIME Detection", "SHA-256 Hashing", "Windows Services", "Cron Daemons"],
-        "desc": "Authored background filesystem automation services that monitor and organize local directories in real-time. Implemented MIME-type inspection, rule-based file taxonomy, and SHA-256 hash collision algorithms to automatically classify files, deduplicate storage, and maintain structured, tamper-evident archival logs across operating system environments.",
-        "invariants": "Zero accidental data deletion; Cryptographic hash deduplication before any hardlink modification.",
-        "metrics": "Processes 10,000 files in <3.5 seconds; Recovers up to 40% duplicate disk space safely.",
+        "name": "Deterministic Filesystem Categorization & Reversible Relocation Engines",
+        "tags": [
+          "Python 3",
+          "MIME Inspection",
+          "Collision-Safe Renaming",
+          "JSON State Journals",
+          "Tkinter GUI"
+        ],
+        "desc": "Developed high-speed local filesystem organization engines capable of non-destructively categorizing thousands of disparate files via MIME analysis and magic bytes. Built atomic collision-safe renaming algorithms (file (1).ext), transactional move journals (_organize_log.json), and instant one-click rollback engines that restore directory structures to their exact original state without data loss.",
+        "invariants": "Atomic file movements with rollback journals; Zero file overwrites on name collision; Strict directory tree hygiene.",
+        "metrics": "3,500+ files scanned & categorized per second; 100% undo fidelity across complex hierarchies; Zero data loss.",
         "codeLang": "python",
         "code": "import os, hashlib\n\nclass StorageDeduplicator:\n    def compute_file_hash(self, file_path: str, chunk_size: int = 65536) -> str:\n        hasher = hashlib.sha256()\n        with open(file_path, 'rb') as f:\n            while chunk := f.read(chunk_size):\n                hasher.update(chunk)\n        return hasher.hexdigest()\n\n    def deduplicate_directory(self, root_dir: str):\n        seen_hashes = {}\n        for root, _, files in os.walk(root_dir):\n            for file in files:\n                full_path = os.path.join(root, file)\n                file_hash = self.compute_file_hash(full_path)\n                if file_hash in seen_hashes:\n                    # Replace duplicate with hardlink to save physical storage\n                    os.remove(full_path)\n                    os.link(seen_hashes[file_hash], full_path)\n                else:\n                    seen_hashes[file_hash] = full_path"
       },
       {
         "id": "dsp-midi-synthesizer",
         "name": "Digital Signal Processing (DSP) & MIDI Protocols",
-        "tags": ["TypeScript", "Web Audio API", "Polyphonic Synthesizers", "Binary MIDI 1.0/2.0 Protocols"],
+        "tags": [
+          "TypeScript",
+          "Web Audio API",
+          "Polyphonic Synthesizers",
+          "Binary MIDI 1.0/2.0 Protocols"
+        ],
         "desc": "Developed comprehensive digital audio tools parsing binary MIDI 1.0/2.0 protocol specifications. Implemented raw byte decoding, multi-track timing clocks, velocity curve transformations, and real-time audio synthesis pipelines using the Web Audio API, delivering interactive piano-roll visualizations and high-fidelity polyphonic sound generation.",
         "invariants": "Zero audio buffer underruns; Strictly monotonic audio scheduling clock; Sub-5ms latency.",
         "metrics": "Sub-5ms audio buffer scheduling latency; 128-voice polyphonic real-time audio synthesis.",
@@ -480,12 +796,49 @@ const DOMAINS_DATA = [
       {
         "id": "genai-presentation-pipeline",
         "name": "Generative AI Document & Presentation Automation",
-        "tags": ["python-pptx", "Structured Prompt Chains", "LLM Integration", "Layout Engines"],
+        "tags": [
+          "python-pptx",
+          "Structured Prompt Chains",
+          "LLM Integration",
+          "Layout Engines"
+        ],
         "desc": "Engineered automated presentation synthesis pipelines utilizing LLM prompt chains and `python-pptx`. Programmatically generates structured slide hierarchies, contextual summaries, professional typography, and corporate color palettes directly from unstructured research documents, automating end-to-end slide deck generation without human manual formatting.",
         "invariants": "Strict visual bounding-box constraints (zero overlapping text); Standard corporate slide aspect ratios.",
         "metrics": "Complete 15-slide technical presentation generated in <8 seconds from raw Markdown or research text.",
         "codeLang": "python",
         "code": "from pptx import Presentation\nfrom pptx.util import Inches, Pt\nfrom pptx.dml.color import RGBColor\n\nclass SlideDeckGenerator:\n    def __init__(self):\n        self.prs = Presentation()\n        self.prs.slide_width = Inches(13.333) # 16:9 widescreen\n        self.prs.slide_height = Inches(7.5)\n\n    def add_technical_slide(self, title: str, bullets: list[str], accent_rgb: tuple = (99, 102, 241)):\n        slide = self.prs.slides.add_slide(self.prs.slide_layouts[6]) # Blank layout\n        title_box = slide.shapes.add_textbox(Inches(1.0), Inches(0.8), Inches(11.3), Inches(1.0))\n        tf = title_box.text_frame\n        p = tf.paragraphs[0]\n        p.text = title.upper()\n        p.font.size = Pt(28)\n        p.font.bold = True\n        p.font.color.rgb = RGBColor(*accent_rgb)"
+      },
+      {
+        "id": "concurrent-api-crawling-replication",
+        "name": "High-Concurrency API Tree Crawling & Adaptive Backoff Engines",
+        "tags": [
+          "ThreadPoolExecutor",
+          "GitHub REST API",
+          "Exponential Backoff",
+          "Binary Detection",
+          "Windows Console TUI"
+        ],
+        "desc": "Built high-concurrency API crawlers and recursive repository tree replicators in Python. Utilized ThreadPoolExecutor worker pools, automated HTTP 429/403 rate-limit backoff cascades, binary payload stream discrimination, and interactive keyboard-driven Windows console TUIs (msvcrt) to clone deep nested directory hierarchies with zero thread deadlocks or packet loss.",
+        "invariants": "Strict token rate limit compliance; Idempotent file replication; Thread-safe write buffers.",
+        "metrics": "15+ concurrent download workers; Exponential retry with jitter on HTTP 403/429; 100% byte-accurate tree cloning.",
+        "codeLang": "python",
+        "code": "def fetch_blob_resilient(url: str, session: requests.Session, max_retries: int = 5) -> bytes:\n    backoff = 1.0\n    for attempt in range(max_retries):\n        resp = session.get(url)\n        if resp.status_code == 200:\n            content_b64 = resp.json().get('content', '')\n            return base64.b64decode(content_b64)\n        elif resp.status_code in (429, 403):\n            reset_header = int(resp.headers.get('X-RateLimit-Reset', time.time() + backoff))\n            time.sleep(max(backoff, reset_header - time.time()))\n            backoff *= 2.0\n    raise ConnectionError(f'Exceeded max retries fetching {url}')"
+      },
+      {
+        "id": "self-healing-browser-orchestration",
+        "name": "Self-Healing Web Automation & Multi-Context Browser Orchestration",
+        "tags": [
+          "Playwright Async",
+          "DOM Healing",
+          "Selector Cascades",
+          "Browser Contexts",
+          "Rate Limiting"
+        ],
+        "desc": "Engineered resilient browser automation pipelines equipped with self-healing selector fallback cascades to overcome dynamic DOM mutations. Architected isolated multi-profile browser context pooling, real-world page validation checkpoints, and operational rate-limiting cooldown protocols that mimic human engagement rhythms and prevent anti-scraping blocks.",
+        "invariants": "Deterministic fallback selector cascade resolution; Pre-flight target validation; Hard process context cleanup.",
+        "metrics": "<250ms fallback cascade resolution on DOM mutation; Zero multi-profile credential contamination; 100% session isolation.",
+        "codeLang": "python",
+        "code": "class ResilientPageActor:\n    def __init__(self, page, selector_bank: dict[str, list[str]]):\n        self.page = page\n        self.selectors = selector_bank\n    async def click_with_self_healing(self, action_key: str, timeout_ms: int = 4000):\n        for sel in self.selectors.get(action_key, []):\n            try:\n                elem = await self.page.wait_for_selector(sel, timeout=timeout_ms, state='visible')\n                if elem and await elem.is_enabled():\n                    await elem.click()\n                    return True\n            except Exception:\n                continue\n        raise ElementNotFoundException(f'All fallbacks exhausted for {action_key}')"
       }
     ]
   }

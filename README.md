@@ -12,7 +12,7 @@
 
 ## 🏛 Overview
 
-An exhaustive technical compendium indexing **41 production engineering competencies** across **8 core disciplines**, engineered from first principles over 28+ production codebases.
+An exhaustive technical compendium indexing **49 production engineering competencies** across **8 core disciplines**, engineered from first principles over 35+ production codebases, research implementations, and hackathon systems.
 
 The system explores the complete execution stack: from low-level compiler intermediate representation (LLVM IR) and deterministic spatial game networking to zero-knowledge cryptographic vaults, high-frequency CPU computer vision pipelines, and resilient multi-agent runtimes.
 
@@ -24,9 +24,9 @@ The system explores the complete execution stack: from low-level compiler interm
 | :--- | :--- | :--- |
 | **Compilers & Toolchains** | LLVM 18+ IR, Recursive Descent AST, Type Checker, Custom Stdlib (`omlib`) | Zero runtime dependencies, predictable codegen |
 | **Spatial Concurrency** | Modern C++20 Multithreaded ECS, 64Hz UDP Socket Delta Replication | ASan/TSan clean, bounded lock contention |
-| **Cryptographic Security** | Authenticated AES-256-GCM, PBKDF2 (600,000 iter), In-Memory Scrubbing | Zero plaintext exposure, constant-time verification |
+| **Cryptographic Security** | Authenticated AES-256-GCM, PBKDF2 (600,000 iter), In-Memory Scrubbing, SHA-256 Hash Chains | Zero plaintext exposure, constant-time verification |
 | **Computer Vision** | MediaPipe 468 3D Mesh, SolvePnP 3D Head Pose tracking | Deterministic 60 FPS CPU execution |
-| **Distributed Orchestration** | Deterministic state machine replication, telemetry ingest, resilient failover | Linearizable reads, partitioned self-healing |
+| **Distributed Orchestration** | LangGraph StateGraph HITL governance, deterministic state machine replication, failover | Linearizable reads, partitioned self-healing |
 
 ---
 
@@ -34,13 +34,13 @@ The system explores the complete execution stack: from low-level compiler interm
 
 This repository powers the interactive portfolio and technical compendium at **[neerbhardwaj.vercel.app](https://neerbhardwaj.vercel.app)**:
 
-- **41-Skill Search & Filter Index:** Real-time search across 8 engineering disciplines with deep-dive modal breakdowns.
+- **49-Skill Search & Filter Index:** Real-time search across 8 engineering disciplines with deep-dive modal breakdowns.
 - **Systems Workbench:** Live interactive simulation modules demonstrating memory management, compiler pipeline stages, and concurrent scheduling.
 - **Invariants Matrix:** Mathematical formulations, algorithmic complexity bounds, and system invariant specifications.
 - **In-Browser Terminal CLI:** Embedded terminal interface emulator with custom commands (`help`, `skills`, `specs`, `fetch`, `clear`).
 - **Command Palette (`⌘K` / `Ctrl+K`):** Keyboard-driven search navigation for instant access to any skill or specification.
 - **Tactile Web Audio:** Micro-interaction acoustic feedback powered by the Web Audio API.
-- **Master PDF Integration:** Integrated download and preview of the 7-page technical engineering compendium.
+- **Master PDF Integration:** Integrated download and preview of the technical engineering compendium.
 
 ---
 
@@ -51,7 +51,7 @@ This repository powers the interactive portfolio and technical compendium at **[
 ├── index.html          # Core single-page application layout & editorial interface
 ├── style.css           # Custom design system, typography & micro-interactions
 ├── app.js              # Application logic, audio engine, command palette, & CLI shell
-├── skills-data.js      # Structured database of 41 engineering competencies & specs
+├── skills-data.js      # Structured database of 49 engineering competencies & specs
 ├── Neer_Bhardwaj_Master_Engineering_Skills_Compendium.pdf # Complete PDF compendium
 ├── serve.py            # Local resilient HTTP development server with hot-reload
 ├── launch.bat          # One-click Windows development launcher
